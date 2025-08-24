@@ -47,7 +47,7 @@ spinner2() {
 }
 
 # Open port scan 
-echo "[*] Escaneando puertos abiertos en $IP..."
+echo "[*] Scanning open ports in $IP..."
 if $SAVE; then
     /usr/bin/sudo /usr/bin/nmap --open -Pn -sS --min-rate 2500 -p- "$IP" \
         > $PWD/simplescan.txt 2>/dev/null &
